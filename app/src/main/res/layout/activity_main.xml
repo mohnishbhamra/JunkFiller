@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <ScrollView
+        android:id="@+id/lblScroll"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true">
+    <TextView
+        android:id="@+id/lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Do you know factory resetting your phone might only removes address of stored data instead of deleting actual data !\n\n
+        This means if you sell/exchange your old phone, someone might recover your personal data even after factory reset!\n\n
+        This app creates multiple copies of junk file to overwrite on any possible personal block of data which was not deleted.\n
+        This way your data cannot be recovered !\n\nStep-1 Factory Reset phone.\nStep-2 Only install this app and hit below button, wait until no space is left!"
+        />
+    </ScrollView>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblScroll"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:text="Initiate Junk Fill" />
+
+    <TextView
+        android:id="@+id/lblSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/disclaimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Developer - Mohnish" />
+
+</RelativeLayout>
